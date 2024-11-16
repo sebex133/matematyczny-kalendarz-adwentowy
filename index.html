@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>Matematyczny kalendarz adwentowy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1 class="text-center">Matematyczny kalendarz adwentowy Lelewel 2.0</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-6 text-right pr-3">
+          <h2>Zadania na dany dzień</h2>
+          <ul class="">
+            <script>
+              var now = new Date();
+              var daysOfYear = [];
+              for (var d = new Date(2024, 11, 1); d <= now; d.setDate(d.getDate() + 1)) {
+                  document.write("<li>Zadanie na: " + d.getDate()  + "-" + (d.getMonth()+1) + "-" + d.getFullYear() + "</li>");
+              }
+            </script>
+          </ul>
+        </div>
+        <div class="col-6 text-left pl-3">
+          <h2>Odpowiedzi do zadań</h2>
+          <ul class="">
+            <script>
+              var now = new Date();
+              var daysOfYear = [];
+              for (var d = new Date(2024, 11, 1); d <= now; d.setDate(d.getDate() + 1)) {
+                  document.write("<li>Odpowiedz na: " + d.getDate()  + "-" + (d.getMonth()+1) + "-" + d.getFullYear() + "</li>");
+              }
+            </script>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
